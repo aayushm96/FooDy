@@ -1,0 +1,456 @@
+@import "utilities";
+@import "animations";
+@import "mediaqueries";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+.navigation{
+    .container{
+        margin: 1rem auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            h2{
+                color: $green-color;
+                font-size: 2.5rem;
+            }
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li:first-child{
+                font-weight: 700;
+                a{
+                    color: black;
+                }    
+            }
+            li{
+                a{
+                    font-size: 1.2rem;
+                    padding: 0 1rem;
+                    color: $para-color;
+                }
+            }
+        }
+
+        .login{
+            font-size: 1.2rem;
+
+            
+            a{
+                display: inline-block;
+                //padding: 0 .5rem;
+            }
+        }
+
+
+    }
+}
+
+header{
+    margin-top: 2.5rem;
+    .container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .left-side{
+            h2{
+                font-size: 2rem;
+                font-weight: 700;
+                letter-spacing: 2px;
+                span{
+                    color: $green-color
+                }
+            }
+            p{
+                letter-spacing: 1px;
+                margin-top: 1rem;
+                color: $para-color;
+                font-size: 1.2rem;
+            }
+            .connect{
+                margin-top: 1rem;
+                a{
+                    display: inline-block;
+                    margin-right: 1rem;   
+                    
+                }
+                .signup{
+                    color: $bg-white;
+                    background-color: $green-color;
+                    border-radius: 10px;
+                    padding: .5rem;
+                }
+                
+            }
+            .searchbar{
+                margin-top: 2rem;
+                form{
+                    
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    input{
+                        flex-grow: 1;
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        height: 2rem;
+                        border: none;
+                        outline: none;
+                        background-color: $bg-white;
+                        width: 100%;
+                        font-size: 1rem;
+                        padding-left: 1rem;
+                       
+                       
+                    }
+                    button{
+                        padding: 0 .5rem;
+                        font-size: 1rem;
+                        height: 2rem;
+                        //width: 10rem;
+                        color: $bg-white;
+                        background-color: $red-color;
+                        border:none;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        .right-side{
+            img{
+                display: block;
+            margin: 0 auto;
+            width: 380px;
+            
+           max-width: 100%;
+           animation-name: main-logo;
+           animation-duration: 2s;
+            }
+        }
+    }
+}
+
+
+.meals{
+    margin-top: 1.5rem;
+    .container{
+       h2{
+           font-size: 1.5rem;
+           
+       }
+
+       .menu{
+
+           display: flex;
+           justify-content: none;
+           align-items: flex-start;
+           margin-top: 0.5rem;
+           overflow: auto;
+        
+           .menu-card{
+               min-width: 150px;
+               transition: transform 0.2s ease-in;
+               &:hover{
+                   transform: translateY(-.5rem);
+               }
+           }
+           .menu-card:nth-child(1){
+               background-color: #f8e2bb;
+           }
+           .menu-card:nth-child(4){
+            background-color: #d9c2aa;
+        }
+        .menu-card:nth-child(2){
+            background-color: #fccf98;
+        }
+        .menu-card:nth-child(3){
+            background-color: #fcaa84;
+        }
+
+           h3{
+               font-weight: 700;
+           }
+
+           img{
+               display: inline-block;
+               margin: 0 auto;
+           }
+        }
+        
+    }
+}
+
+
+.item{
+    margin-top: 1.5rem;
+    .container{
+        h2{
+            font-size: 1.5rem;
+        }
+        .items{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 1.5rem;
+            overflow: auto;
+            .card{
+                @include grid-card;
+                min-width: 300px;
+                .card-img{
+                    display: block;
+                    grid-row-start: 1;
+                    grid-row-end: 3;
+                    margin: 0 auto;
+                }
+                .card-details{
+                    line-height: 1.4;
+                        letter-spacing: 2px;
+                        p{
+                            font-size: .75rem;
+                        }
+                }
+                .cart{
+                    a{
+                        display: block  ;
+                        background-color: $red-color;
+                        color: $bg-white;
+                        border-radius: 10px;
+                        margin: auto 0;
+                        padding: 2px 4px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.deliver{
+    margin-top: 1.5rem;
+        
+    .container{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        .delivery-details{
+            align-self: center;
+            padding-right: 1rem;
+            line-height: 1.5;
+            h3{
+                font-size: 1.5rem;
+                span{
+                    color: $green-color;
+                }
+            }
+            p{
+                letter-spacing: 1px;
+                color: $para-color;
+            }
+        }
+    }
+}
+
+footer{
+    margin-top: 2.5rem;
+   
+    .container{
+            background-color: $bg-white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            .top{
+                margin-bottom: 1rem;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 1rem;
+               li{
+                   a{
+                       color: black;
+                       font-weight: 700;
+                   }
+               }
+            }
+
+            .bottom{
+               padding-bottom: 1rem;
+                display: grid;
+                grid-template-columns: 60% 40%;
+                height: auto;
+                ul{
+                    li{
+                        display: inline-block;
+                        padding: 2rem 1rem;
+                        align-self: center;
+                        i{
+                            color: $red-color;
+                        }
+                    }
+                }
+                .email{
+                    align-self: center;
+                    justify-self: center;
+                    margin-right: 1rem;
+                    h3{
+                        margin-bottom: 0.5rem;
+                        font-size: 1.5rem;
+                    }
+                    form{
+                        
+                        border-radius: 50rem;
+                        display: inline-block;
+                        width: 100%;
+                        background-color: $bg-light-white;
+                        input{
+                            padding-left: 0.5rem;
+                            display: inline-block;
+                            height: 1.5rem;
+                            background-color: $bg-light-white;
+                            border: none;
+                            outline: none;
+                            
+                            
+                        }
+                        button{
+                            background-color: $red-color;
+                            color: $bg-white;
+                            padding: 0.2rem .5rem;
+                            outline: none;
+                            border: none;
+                            border-radius: 50px;
+                        }
+                    }
+
+                }
+            }
+    }
+}
+
+
+//offers page CSS-------------------------------------------------
+
+
+.offers{
+    .container{
+        height: 61vh;
+        h2{
+            margin-bottom: 0.5rem;
+        }
+        .offers-main{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: none;
+            gap: 0.5rem;
+            .card{
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                align-items: center;
+                margin: .5rem auto;
+                padding: 0.5rem;
+                width: 100%;
+                
+                & > h2,p,a{
+                    margin:.5rem 0;
+                }
+               
+                 h2{
+                     letter-spacing: 2px;
+                     font-size: 1.5rem;
+                    font-weight: 500;
+                }
+                a{
+
+                    max-width: fit-content;
+                    background-color: $red-color;
+                    color: $bg-white;
+                    padding: .5rem 1rem;
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+}
+
+//contact page css -------------------------------------------
+
+.contact-me{
+    .container{
+        .contact{
+            height: 61vh;
+            h2{
+                color: $green-color;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+//popup sections css--------------------------------------------------------------
+
+
+
+.popup{
+    
+    visibility: hidden;
+    opacity: 0;
+    &:target{
+        visibility: visible;
+        opacity: 1;
+    }
+    .container{
+        .popup-content{
+            
+            padding-top: 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba($color: #000000, $alpha: 0.8);
+
+            h2{
+                color: $bg-white
+            }
+
+            .popup-menu{
+               display: flex;
+               justify-content: space-evenly;
+               align-items: center;
+               
+                .pop-card{
+                   
+                    img{
+                        display: inline-block;
+                    }
+                    
+                    color: $bg-white;
+                    a{
+                        display: inline-block;
+                        max-width: fit-content;
+                        background-color: $red-color;
+                        color: $bg-white;
+                        padding: .2rem 1rem;
+                        border-radius: 25px;
+                    }
+                }
+            }
+            .close{
+                a{
+                    color: $bg-white;
+                    display: inline-block;
+                }
+               
+            }
+        }
+    }
+}
+
+
+
+
