@@ -316,7 +316,8 @@ header .container .right-side img {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 0.5rem;
-  overflow: auto;
+  scrollbar-width: none;
+  overflow-y: scroll;
 }
 
 .meals .container .menu .menu-card {
@@ -376,8 +377,8 @@ header .container .right-side img {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 1.5rem;
-  overflow: auto;
   scrollbar-width: none;
+  overflow-y: scroll;
 }
 
 .item .container .items .card {
