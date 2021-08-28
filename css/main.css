@@ -616,6 +616,12 @@ footer .container .bottom .email form button {
   header .container .left-side p {
     font-size: 1rem;
   }
+  .popup .container .popup-content .popup-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -661,6 +667,12 @@ footer .container .bottom .email form button {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     padding-bottom: 2rem;
+  }
+  .popup .container .popup-content .popup-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */

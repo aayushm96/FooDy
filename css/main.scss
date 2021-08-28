@@ -464,6 +464,9 @@ footer{
     header .container .left-side p{
         font-size: 1rem
     }
+    .popup .container .popup-content .popup-menu{
+        flex-direction: column;
+    }
    
 }
 
@@ -509,6 +512,9 @@ footer .container .bottom{
     text-align: center;
     grid-template-columns: 100%;
     padding-bottom: 2rem;
+}
+.popup .container .popup-content .popup-menu{
+    flex-direction: column;
 }
 
 
