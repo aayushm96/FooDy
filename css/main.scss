@@ -423,6 +423,7 @@ footer{
                display: flex;
                justify-content: space-evenly;
                align-items: center;
+               flex-wrap: wrap;
                
                 .pop-card{
                    
@@ -464,9 +465,7 @@ footer{
     header .container .left-side p{
         font-size: 1rem
     }
-    .popup .container .popup-content .popup-menu{
-        flex-direction: column;
-    }
+ 
    
 }
 
@@ -513,9 +512,7 @@ footer .container .bottom{
     grid-template-columns: 100%;
     padding-bottom: 2rem;
 }
-.popup .container .popup-content .popup-menu{
-    flex-direction: column;
-}
+
 
 
 }

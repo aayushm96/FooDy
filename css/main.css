@@ -580,6 +580,8 @@ footer .container .bottom .email form button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .popup .container .popup-content .popup-menu .pop-card {
@@ -615,12 +617,6 @@ footer .container .bottom .email form button {
   }
   header .container .left-side p {
     font-size: 1rem;
-  }
-  .popup .container .popup-content .popup-menu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
@@ -667,12 +663,6 @@ footer .container .bottom .email form button {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     padding-bottom: 2rem;
-  }
-  .popup .container .popup-content .popup-menu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */
