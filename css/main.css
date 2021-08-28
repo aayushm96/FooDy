@@ -91,64 +91,6 @@ a {
   }
 }
 
-@media screen and (max-width: 799px) {
-  .container {
-    max-width: 85vw;
-  }
-  header .container .left-side h2 {
-    font-size: 1.5rem;
-  }
-  header .container .left-side p {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    max-width: 90vw;
-  }
-  .navigation .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .navigation .container > * {
-    margin-bottom: 1rem;
-  }
-  header .container {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-  }
-  header .container > * {
-    margin-bottom: 1rem;
-  }
-  .item .container .items .card {
-    text-align: center;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: auto auto auto;
-        grid-template-rows: auto auto auto;
-    min-width: 150px;
-  }
-  .deliver .container {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-  }
-  .deliver .container img {
-    display: none;
-  }
-  footer .container .top {
-    display: none;
-  }
-  footer .container .bottom {
-    text-align: center;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    padding-bottom: 2rem;
-  }
-}
-
 .navigation .container {
   margin: 1rem auto;
   display: -webkit-box;
@@ -293,8 +235,8 @@ header .container .right-side img {
   max-width: 100%;
   -webkit-animation-name: main-logo;
           animation-name: main-logo;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .meals {
@@ -662,5 +604,63 @@ footer .container .bottom .email form button {
 .popup .container .popup-content .close a {
   color: #fff;
   display: inline-block;
+}
+
+@media screen and (max-width: 799px) {
+  .container {
+    max-width: 85vw;
+  }
+  header .container .left-side h2 {
+    font-size: 1.5rem;
+  }
+  header .container .left-side p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 90vw;
+  }
+  .navigation .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navigation .container > * {
+    margin-bottom: 1rem;
+  }
+  header .container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  header .container > * {
+    margin-bottom: 1rem;
+  }
+  .item .container .items .card {
+    text-align: center;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    min-width: 150px;
+  }
+  .deliver .container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .deliver .container img {
+    display: none;
+  }
+  footer .container .top {
+    display: none;
+  }
+  footer .container .bottom {
+    text-align: center;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    padding-bottom: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
