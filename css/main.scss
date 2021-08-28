@@ -149,8 +149,8 @@ header{
            justify-content: none;
            align-items: flex-start;
            margin-top: 0.5rem;
-           scrollbar-width: none;
-           overflow-y:scroll;
+           
+          overflow-x: scroll;
         
            .menu-card{
                min-width: 150px;
@@ -197,8 +197,7 @@ header{
             justify-content: flex-start;
             align-items: flex-start;
             margin-top: 1.5rem;
-            scrollbar-width: none;
-            overflow-y: scroll;
+            overflow-x: scroll;
             .card{
                 @include grid-card;
                 min-width: 300px;
@@ -228,6 +227,7 @@ header{
                 }
             }
         }
+      
     }
 }
 
