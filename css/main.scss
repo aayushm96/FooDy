@@ -198,6 +198,7 @@ header{
             align-items: flex-start;
             margin-top: 1.5rem;
             overflow: auto;
+            scrollbar-width: none;
             .card{
                 @include grid-card;
                 min-width: 300px;
