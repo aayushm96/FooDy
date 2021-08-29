@@ -317,6 +317,7 @@ header .container .right-side img {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 1.5rem;
+  overflow-x: scroll;
 }
 
 .item .container .items .card {
