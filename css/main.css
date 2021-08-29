@@ -258,6 +258,7 @@ header .container .right-side img {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 0.5rem;
+  overflow-x: scroll;
 }
 
 .meals .container .menu .menu-card {
