@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -199,7 +201,7 @@ header .container .left-side .connect .signup {
   color: #fff;
   background-color: #29e072;
   border-radius: 10px;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 header .container .left-side .searchbar {
@@ -234,7 +236,7 @@ header .container .left-side .searchbar form input {
 }
 
 header .container .left-side .searchbar form button {
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   font-size: 1rem;
   height: 2rem;
   color: #fff;
@@ -360,7 +362,7 @@ header .container .right-side img {
 }
 
 .item .container .items .card .card-details p {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .item .container .items .card .cart a {
@@ -487,7 +489,7 @@ footer .container .bottom .email form input {
 footer .container .bottom .email form button {
   background-color: #d81e2d;
   color: #fff;
-  padding: 0.2rem .5rem;
+  padding: 0.2rem 0.5rem;
   outline: none;
   border: none;
   border-radius: 50px;
@@ -525,13 +527,15 @@ footer .container .bottom .email form button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: .5rem auto;
+  margin: 0.5rem auto;
   padding: 0.5rem;
   width: 100%;
 }
 
-.offers .container .offers-main .card > h2, .offers .container .offers-main .card p, .offers .container .offers-main .card a {
-  margin: .5rem 0;
+.offers .container .offers-main .card > h2,
+.offers .container .offers-main .card p,
+.offers .container .offers-main .card a {
+  margin: 0.5rem 0;
 }
 
 .offers .container .offers-main .card h2 {
@@ -546,7 +550,7 @@ footer .container .bottom .email form button {
   max-width: fit-content;
   background-color: #d81e2d;
   color: #fff;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 25px;
 }
 
@@ -612,7 +616,7 @@ footer .container .bottom .email form button {
   max-width: fit-content;
   background-color: #d81e2d;
   color: #fff;
-  padding: .2rem 1rem;
+  padding: 0.2rem 1rem;
   border-radius: 25px;
 }
 
@@ -742,7 +746,7 @@ footer .container .bottom .email form button {
 
 .cust .container main .tab-row #login::before {
   color: white;
-  content: 'LoginIn';
+  content: "LoginIn";
   font-size: 2rem;
   position: absolute;
   top: 50%;
@@ -753,7 +757,7 @@ footer .container .bottom .email form button {
 
 .cust .container main .tab-row #signup::before {
   color: white;
-  content: 'SignUp';
+  content: "SignUp";
   font-size: 2rem;
   position: absolute;
   top: 50%;
@@ -779,7 +783,8 @@ footer .container .bottom .email form button {
   margin: 0 auto;
 }
 
-.cust .container main .tab-box .box-one .form-grp input, .cust .container main .tab-box .box-one .form-grp label {
+.cust .container main .tab-box .box-one .form-grp input,
+.cust .container main .tab-box .box-one .form-grp label {
   width: 70%;
 }
 
@@ -811,7 +816,8 @@ footer .container .bottom .email form button {
   margin: 0 auto;
 }
 
-.cust .container main .tab-box .box-two .form-grp input, .cust .container main .tab-box .box-two .form-grp label {
+.cust .container main .tab-box .box-two .form-grp input,
+.cust .container main .tab-box .box-two .form-grp label {
   width: 70%;
 }
 

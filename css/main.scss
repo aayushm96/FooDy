@@ -1,17 +1,16 @@
 @import "utilities";
 @import "animations";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
-
-.navigation{
-    .container{
+.navigation {
+    .container {
         margin: 1rem auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .logo{
-            h2{
+        .logo {
+            h2 {
                 color: $green-color;
                 font-size: 2.5rem;
             }
@@ -22,14 +21,14 @@
             justify-content: space-between;
             align-items: center;
 
-            li:first-child{
+            li:first-child {
                 font-weight: 700;
-                a{
+                a {
                     color: black;
-                }    
+                }
             }
-            li{
-                a{
+            li {
+                a {
                     font-size: 1.2rem;
                     padding: 0 1rem;
                     color: $para-color;
@@ -37,63 +36,57 @@
             }
         }
 
-        .login{
+        .login {
             font-size: 1.2rem;
 
-            
-            a{
+            a {
                 display: inline-block;
                 //padding: 0 .5rem;
             }
         }
-
-
     }
 }
 
-header{
+header {
     margin-top: 2.5rem;
-    .container{
+    .container {
         display: grid;
         grid-template-columns: 50% 50%;
-        .left-side{
-            h2{
+        .left-side {
+            h2 {
                 font-size: 2rem;
                 font-weight: 700;
                 letter-spacing: 2px;
-                span{
-                    color: $green-color
+                span {
+                    color: $green-color;
                 }
             }
-            p{
+            p {
                 letter-spacing: 1px;
                 margin-top: 1rem;
                 color: $para-color;
                 font-size: 1.2rem;
             }
-            .connect{
+            .connect {
                 margin-top: 1rem;
-                a{
+                a {
                     display: inline-block;
-                    margin-right: 1rem;   
-                    
+                    margin-right: 1rem;
                 }
-                .signup{
+                .signup {
                     color: $bg-white;
                     background-color: $green-color;
                     border-radius: 10px;
-                    padding: .5rem;
+                    padding: 0.5rem;
                 }
-                
             }
-            .searchbar{
+            .searchbar {
                 margin-top: 2rem;
-                form{
-                    
+                form {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    input{
+                    input {
                         flex-grow: 1;
                         border-top-left-radius: 10px;
                         border-bottom-left-radius: 10px;
@@ -104,152 +97,141 @@ header{
                         width: 100%;
                         font-size: 1rem;
                         padding-left: 1rem;
-                       
-                       
                     }
-                    button{
-                        padding: 0 .5rem;
+                    button {
+                        padding: 0 0.5rem;
                         font-size: 1rem;
                         height: 2rem;
                         //width: 10rem;
                         color: $bg-white;
                         background-color: $red-color;
-                        border:none;
+                        border: none;
                         border-radius: 5px;
                     }
                 }
             }
         }
-        .right-side{
-            img{
+        .right-side {
+            img {
                 display: block;
-            margin: 0 auto;
-            width: 380px;
-            
-           max-width: 100%;
-           animation-name: main-logo;
-           animation-duration: 0.5s;
+                margin: 0 auto;
+                width: 380px;
+
+                max-width: 100%;
+                animation-name: main-logo;
+                animation-duration: 0.5s;
             }
         }
     }
 }
 
-
-.meals{
+.meals {
     margin-top: 1.5rem;
-    .container{
-       h2{
-           font-size: 1.5rem;
-           
-       }
-
-       .menu{
-
-           display: flex;
-           justify-content: none;
-           align-items: flex-start;
-           margin-top: 0.5rem;
-           overflow-x: scroll;
-         
-        
-           .menu-card{
-               min-width: 150px;
-               transition: transform 0.2s ease-in;
-               &:hover{
-                   transform: translateY(-.5rem);
-               }
-           }
-           .menu-card:nth-child(1){
-               background-color: #f8e2bb;
-           }
-           .menu-card:nth-child(4){
-            background-color: #d9c2aa;
-        }
-        .menu-card:nth-child(2){
-            background-color: #fccf98;
-        }
-        .menu-card:nth-child(3){
-            background-color: #fcaa84;
+    .container {
+        h2 {
+            font-size: 1.5rem;
         }
 
-           h3{
-               font-weight: 700;
-           }
+        .menu {
+            display: flex;
+            justify-content: none;
+            align-items: flex-start;
+            margin-top: 0.5rem;
+            overflow-x: scroll;
 
-           img{
-               display: inline-block;
-               margin: 0 auto;
-           }
+            .menu-card {
+                min-width: 150px;
+                transition: transform 0.2s ease-in;
+                &:hover {
+                    transform: translateY(-0.5rem);
+                }
+            }
+            .menu-card:nth-child(1) {
+                background-color: #f8e2bb;
+            }
+            .menu-card:nth-child(4) {
+                background-color: #d9c2aa;
+            }
+            .menu-card:nth-child(2) {
+                background-color: #fccf98;
+            }
+            .menu-card:nth-child(3) {
+                background-color: #fcaa84;
+            }
+
+            h3 {
+                font-weight: 700;
+            }
+
+            img {
+                display: inline-block;
+                margin: 0 auto;
+            }
         }
-        
     }
 }
 
-
-.item{
+.item {
     margin-top: 1.5rem;
-    .container{
-        h2{
+    .container {
+        h2 {
             font-size: 1.5rem;
         }
-        .items{
+        .items {
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
             margin-top: 1.5rem;
             overflow-x: scroll;
-            
-            .card{
+
+            .card {
                 @include grid-card;
                 min-width: 300px;
-                .card-img{
+                .card-img {
                     display: block;
                     grid-row-start: 1;
                     grid-row-end: 3;
                     margin: 0 auto;
                 }
-                .card-details{
+                .card-details {
                     line-height: 1.4;
-                        letter-spacing: 2px;
-                        p{
-                            font-size: .75rem;
-                        }
+                    letter-spacing: 2px;
+                    p {
+                        font-size: 0.75rem;
+                    }
                 }
-                .cart{
-                    a{
-                        display: block  ;
+                .cart {
+                    a {
+                        display: block;
                         background-color: $red-color;
                         color: $bg-white;
                         border-radius: 10px;
                         margin: auto 0;
                         padding: 2px 4px;
-                        
                     }
                 }
             }
         }
-      
     }
 }
 
-
-.deliver{
+.deliver {
     margin-top: 1.5rem;
-        
-    .container{
+
+    .container {
         display: grid;
         grid-template-columns: 70% 30%;
-        .delivery-details{
+        .delivery-details {
             align-self: center;
             padding-right: 1rem;
             line-height: 1.5;
-            h3{
+            h3 {
                 font-size: 1.5rem;
-                span{
+                span {
                     color: $green-color;
                 }
             }
-            p{
+            p {
                 letter-spacing: 1px;
                 color: $para-color;
             }
@@ -257,120 +239,115 @@ header{
     }
 }
 
-footer{
+footer {
     margin-top: 2.5rem;
-   
-    .container{
-            background-color: $bg-white;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            .top{
-                margin-bottom: 1rem;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                padding: 1rem;
-               li{
-                   a{
-                       color: black;
-                       font-weight: 700;
-                   }
-               }
-            }
 
-            .bottom{
-               padding-bottom: 1rem;
-                display: grid;
-                grid-template-columns: 60% 40%;
-                height: auto;
-                ul{
-                    li{
-                        display: inline-block;
-                        padding: 2rem 1rem;
-                        align-self: center;
-                        i{
-                            color: $red-color;
-                        }
-                    }
+    .container {
+        background-color: $bg-white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        .top {
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1rem;
+            li {
+                a {
+                    color: black;
+                    font-weight: 700;
                 }
-                .email{
+            }
+        }
+
+        .bottom {
+            padding-bottom: 1rem;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            height: auto;
+            ul {
+                li {
+                    display: inline-block;
+                    padding: 2rem 1rem;
                     align-self: center;
-                    justify-self: center;
-                    margin-right: 1rem;
-                    h3{
-                        margin-bottom: 0.5rem;
-                        font-size: 1.5rem;
+                    i {
+                        color: $red-color;
                     }
-                    form{
-                        
-                        border-radius: 50rem;
-                        display: inline-block;
-                        width: 100%;
-                        background-color: $bg-light-white;
-                        input{
-                            padding-left: 0.5rem;
-                            display: inline-block;
-                            height: 1.5rem;
-                            background-color: $bg-light-white;
-                            border: none;
-                            outline: none;
-                            
-                            
-                        }
-                        button{
-                            background-color: $red-color;
-                            color: $bg-white;
-                            padding: 0.2rem .5rem;
-                            outline: none;
-                            border: none;
-                            border-radius: 50px;
-                        }
-                    }
-
                 }
             }
+            .email {
+                align-self: center;
+                justify-self: center;
+                margin-right: 1rem;
+                h3 {
+                    margin-bottom: 0.5rem;
+                    font-size: 1.5rem;
+                }
+                form {
+                    border-radius: 50rem;
+                    display: inline-block;
+                    width: 100%;
+                    background-color: $bg-light-white;
+                    input {
+                        padding-left: 0.5rem;
+                        display: inline-block;
+                        height: 1.5rem;
+                        background-color: $bg-light-white;
+                        border: none;
+                        outline: none;
+                    }
+                    button {
+                        background-color: $red-color;
+                        color: $bg-white;
+                        padding: 0.2rem 0.5rem;
+                        outline: none;
+                        border: none;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
     }
 }
 
-
 //offers page CSS-------------------------------------------------
 
-
-.offers{
-    .container{
+.offers {
+    .container {
         height: 61vh;
-        h2{
+        h2 {
             margin-bottom: 0.5rem;
         }
-        .offers-main{
+        .offers-main {
             display: grid;
             grid-template-columns: 33% 33% 33%;
             grid-template-rows: none;
             gap: 0.5rem;
-            .card{
+            .card {
                 display: flex;
                 justify-content: space-evenly;
                 flex-direction: column;
                 align-items: center;
-                margin: .5rem auto;
+                margin: 0.5rem auto;
                 padding: 0.5rem;
                 width: 100%;
-                
-                & > h2,p,a{
-                    margin:.5rem 0;
+
+                & > h2,
+                p,
+                a {
+                    margin: 0.5rem 0;
                 }
-               
-                 h2{
-                     letter-spacing: 2px;
-                     font-size: 1.5rem;
+
+                h2 {
+                    letter-spacing: 2px;
+                    font-size: 1.5rem;
                     font-weight: 500;
                 }
-                a{
-
+                a {
                     max-width: fit-content;
                     background-color: $red-color;
                     color: $bg-white;
-                    padding: .5rem 1rem;
+                    padding: 0.5rem 1rem;
                     border-radius: 25px;
                 }
             }
@@ -380,11 +357,11 @@ footer{
 
 //contact page css -------------------------------------------
 
-.contact-me{
-    .container{
-        .contact{
+.contact-me {
+    .container {
+        .contact {
             height: 61vh;
-            h2{
+            h2 {
                 color: $green-color;
                 font-size: 2rem;
             }
@@ -392,22 +369,17 @@ footer{
     }
 }
 
-
 //popup sections css--------------------------------------------------------------
 
-
-
-.popup{
-    
+.popup {
     visibility: hidden;
     opacity: 0;
-    &:target{
+    &:target {
         visibility: visible;
         opacity: 1;
     }
-    .container{
-        .popup-content{
-            
+    .container {
+        .popup-content {
             padding-top: 2rem;
             position: fixed;
             top: 0;
@@ -416,115 +388,105 @@ footer{
             height: 100vh;
             background-color: rgba($color: #000000, $alpha: 0.8);
 
-            h2{
-                color: $bg-white
+            h2 {
+                color: $bg-white;
             }
 
-            .popup-menu{
-               display: flex;
-               justify-content: space-evenly;
-               align-items: center;
-               flex-wrap: wrap;
-               
-                .pop-card{
-                   
-                    img{
+            .popup-menu {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .pop-card {
+                    img {
                         display: inline-block;
                     }
-                    
+
                     color: $bg-white;
-                    a{
+                    a {
                         display: inline-block;
                         max-width: fit-content;
                         background-color: $red-color;
                         color: $bg-white;
-                        padding: .2rem 1rem;
+                        padding: 0.2rem 1rem;
                         border-radius: 25px;
                     }
                 }
             }
-            .close{
-                a{
+            .close {
+                a {
                     color: $bg-white;
                     display: inline-block;
                 }
-               
             }
         }
     }
 }
 
-
-
-@media screen and (max-width:799px){
-    .container{
+@media screen and (max-width: 799px) {
+    .container {
         max-width: 85vw;
     }
-    header .container .left-side h2{
+    header .container .left-side h2 {
         font-size: 1.5rem;
     }
-    header .container .left-side p{
-        font-size: 1rem
-    }
- 
-   
-}
-
-@media screen and (max-width:600px){
-.container{
-    max-width: 90vw;
-}
-.navigation .container{
-    flex-direction: column;
-    & > *{
-        margin-bottom: 1rem;
+    header .container .left-side p {
+        font-size: 1rem;
     }
 }
 
-header .container{
-    grid-template-columns: 100%;
-    & > *{
-        margin-bottom: 1rem;
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 90vw;
+    }
+    .navigation .container {
+        flex-direction: column;
+        & > * {
+            margin-bottom: 1rem;
+        }
+    }
+
+    header .container {
+        grid-template-columns: 100%;
+        & > * {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .item .container .items .card {
+        text-align: center;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        min-width: 150px;
+    }
+
+    .deliver .container {
+        grid-template-columns: 100%;
+    }
+    .deliver .container img {
+        display: none;
+    }
+
+    footer .container .top {
+        display: none;
+    }
+    footer .container .bottom {
+        text-align: center;
+        grid-template-columns: 100%;
+        padding-bottom: 2rem;
     }
 }
 
-.item .container .items .card{
-    text-align: center;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
-    min-width: 150px
-}
-
-.deliver .container{
-    grid-template-columns: 100%;
-    
-}
-.deliver .container img{
-  display: none;
-    
-}
-
-footer .container .top{
-    display: none;
-
-}
-footer .container .bottom{
-    text-align: center;
-    grid-template-columns: 100%;
-    padding-bottom: 2rem;
-}
-}
-
-.cust{
+.cust {
     visibility: hidden;
     opacity: 0;
-    &:target{
+    &:target {
         visibility: visible;
         opacity: 1;
     }
-    .container{
-        main{
-            
+    .container {
+        main {
             padding-top: 2rem;
             position: fixed;
             top: 0;
@@ -532,59 +494,55 @@ footer .container .bottom{
             width: 100%;
             height: 100vh;
             background-color: rgba($color: #000000, $alpha: 0.8);
-            .folder{
+            .folder {
                 width: auto;
                 height: auto;
-                
+
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: 2fr 8fr;
             }
-           
-            .tab-row{
-               
-                
+
+            .tab-row {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;    
-                    input{
-                        cursor: pointer;
-                        position: relative;
-                        display: block;
-                        width: 150px;
-                        height: 50px;
-                        justify-self: center;
-                        align-self: center;
-                        @include formstylereset();
-                    }
-                    #login::before{
-                        color: white;
-                        content: 'LoginIn';
-                        font-size: 2rem;
-                        @include center();
-                    }   
-                    #signup::before{
-                        color: white;
-                        content: 'SignUp';
-                        font-size: 2rem;
-                        @include center();
-                        
-                    }
-                
+                align-items: center;
+                input {
+                    cursor: pointer;
+                    position: relative;
+                    display: block;
+                    width: 150px;
+                    height: 50px;
+                    justify-self: center;
+                    align-self: center;
+                    @include formstylereset();
+                }
+                #login::before {
+                    color: white;
+                    content: "LoginIn";
+                    font-size: 2rem;
+                    @include center();
+                }
+                #signup::before {
+                    color: white;
+                    content: "SignUp";
+                    font-size: 2rem;
+                    @include center();
+                }
             }
-            .tab-box{
+            .tab-box {
                 position: relative;
-                
-                .box-one{
-                    
+
+                .box-one {
                     @include grid();
-                    .form-grp{            
+                    .form-grp {
                         width: 70%;
                         margin: 0 auto;
-                        input,label{
+                        input,
+                        label {
                             width: 70%;
                         }
-                        button{
+                        button {
                             @include formstylereset;
                             margin: 0 auto;
                             display: block;
@@ -594,19 +552,20 @@ footer .container .bottom{
                         }
                     }
                 }
-                .box-two{
+                .box-two {
                     position: absolute;
                     inset: 0;
-                   // background: linear-gradient(45deg, rgba(41,224,114,1) 32%, rgba(213,34,46,1) 81%);
+                    // background: linear-gradient(45deg, rgba(41,224,114,1) 32%, rgba(213,34,46,1) 81%);
                     @include grid();
-                    .form-grp{
+                    .form-grp {
                         //background-color: red;
                         width: 70%;
                         margin: 0 auto;
-                        input,label{
+                        input,
+                        label {
                             width: 70%;
                         }
-                        button{
+                        button {
                             @include formstylereset;
                             margin: 0 auto;
                             display: block;
@@ -615,11 +574,12 @@ footer .container .bottom{
                             background-color: $red-color;
                         }
                     }
-                    
                 }
             }
-            .close{
-                a{color: white;}
+            .close {
+                a {
+                    color: white;
+                }
             }
         }
     }
