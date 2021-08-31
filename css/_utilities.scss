@@ -67,4 +67,38 @@ a{
     justify-content: center;
     align-items: center;
 }
+main{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+@mixin grid {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@mixin formstylereset {
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+.form-grp{
+ color: #e9e9e9;   
+}
 
