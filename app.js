@@ -9,13 +9,13 @@ signupradio.addEventListener('click', showS)
 
 function showL(e) {
     e.preventDefault();
-    box.children[0].style.visibility = 'visible';
-    box.children[1].style.visibility = 'hidden';
+    box.children[0].style.display = 'block';
+    box.children[1].style.display = 'none';
     // console.log(box.children[1]);
 }
 function showS(e) {
     e.preventDefault();
-    box.children[0].style.visibility = 'hidden';
-    box.children[1].style.visibility = 'visible';
+    box.children[0].style.display = 'none';
+    box.children[1].style.display = 'block';
     // console.log(box.children[1]);
 }
