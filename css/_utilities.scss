@@ -113,5 +113,16 @@ label {
     outline: none;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+    height: 2px;
+}
+::-webkit-scrollbar-track{
+    background: #fff;
+}
 
+::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background: $green-color;
+}
 
