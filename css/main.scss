@@ -137,7 +137,7 @@ header {
             justify-content: none;
             align-items: flex-start;
             margin-top: 0.5rem;
-            overflow:auto;
+            overflow: auto;
 
             .menu-card {
                 min-width: 150px;
@@ -369,7 +369,7 @@ footer {
     }
 }
 
-//popup sections css--------------------------------------------------------------
+// popup sections css--------------------------------------------------------------
 
 .popup {
     visibility: hidden;
@@ -386,7 +386,7 @@ footer {
             left: 0;
             width: 100%;
             height: 100vh;
-            background-color: rgba($color: #000000, $alpha: 0.8);
+            background-color: rgba(0,0,0,0.4);
 
             h2 {
                 color: $bg-white;
@@ -420,6 +420,76 @@ footer {
                     display: inline-block;
                 }
             }
+        }
+    }
+}
+
+.popup-user {
+    //display: none;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    width: 100%;
+    .content {
+        border-radius: 10px;
+        padding: 2rem;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 1rem;
+        background-color: #fff;
+        .btn-container {
+            border: 2px #7cd19e solid;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            .btn {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+        }
+       
+        .page {
+            display: none;
+            padding: 1rem;
+            .page-body {
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    span {
+                        color: #7cd19e;
+                    }
+                }
+                label {
+                    padding: 0.5rem;
+                    color: black;
+                    background-color: #fff;
+                }
+                input {
+                    color: black;
+                    width: 100%;
+                    padding: 0.5rem;
+                    border-radius: 10px;
+                }
+                button {
+                    margin-top: 0.5rem;
+                    padding: 0.5rem;
+                    background-color: #7cd19e;
+                    color: #fff;
+                }
+            }
+        }
+        .btn-active {
+            background-color: white;
+        }
+        .content-active {
+            display: block;
         }
     }
 }
@@ -475,114 +545,5 @@ footer {
         text-align: center;
         grid-template-columns: 100%;
         padding-bottom: 2rem;
-    }
-}
-
-.cust {
-    visibility: hidden;
-    opacity: 0;
-    &:target {
-        visibility: visible;
-        opacity: 1;
-    }
-    .container {
-        main {
-            padding-top: 2rem;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            background-color: rgba($color: #000000, $alpha: 0.8);
-            .folder {
-                width: auto;
-                height: auto;
-
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 2fr 8fr;
-            }
-
-            .tab-row {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                input {
-                    cursor: pointer;
-                    position: relative;
-                    display: block;
-                    width: 150px;
-                    height: 50px;
-                    justify-self: center;
-                    align-self: center;
-                    @include formstylereset();
-                }
-                #login::before {
-                    color: white;
-                    content: "LoginIn";
-                    font-size: 2rem;
-                    @include center();
-                }
-                #signup::before {
-                    color: white;
-                    content: "SignUp";
-                    font-size: 2rem;
-                    @include center();
-                }
-            }
-            .tab-box {
-                position: relative;
-
-                .box-one {
-                    display: none;
-                    @include grid();
-                    .form-grp {
-                        width: 70%;
-                        margin: 0 auto;
-                        input,
-                        label {
-                            width: 70%;
-                        }
-                        button {
-                            @include formstylereset;
-                            margin: 0 auto;
-                            display: block;
-                            width: 70%;
-                            color: $bg-light-white;
-                            background-color: $green-color;
-                        }
-                    }
-                }
-                .box-two {
-                    display: block;
-                    position: absolute;
-                    inset: 0;
-                    // background: linear-gradient(45deg, rgba(41,224,114,1) 32%, rgba(213,34,46,1) 81%);
-                    @include grid();
-                    .form-grp {
-                        //background-color: red;
-                        width: 70%;
-                        margin: 0 auto;
-                        input,
-                        label {
-                            width: 70%;
-                        }
-                        button {
-                            @include formstylereset;
-                            margin: 0 auto;
-                            display: block;
-                            width: 70%;
-                            color: $bg-light-white;
-                            background-color: $red-color;
-                        }
-                    }
-                }
-            }
-            .close {
-                a {
-                    color: white;
-                }
-            }
-        }
     }
 }

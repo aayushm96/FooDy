@@ -1,21 +1,36 @@
-const loginradio = document.querySelector('#login');
-const signupradio = document.querySelector('#signup');
+const btns = document.querySelectorAll('.btn');
+//selected all btns in a variable btns
+const content = document.querySelectorAll('.page');
+//selected all content in a variable in page
+const big = document.querySelector('.content');
 
-const box = document.querySelector('.tab-box');
+const popup=document.querySelector('.popup-user');
 
+//console.log(popup);
 
-loginradio.addEventListener('click', showL);
-signupradio.addEventListener('click', showS)
+big.addEventListener('click', function (e) {//click event on the main container
+    let x = e.target.dataset.id;
+    if (x) {
+        btns.forEach(function (i) {
+            i.classList.remove('btn-active');
+        });
+        e.target.classList.add('btn-active');
+        content.forEach(function (i) {
+            i.classList.remove('content-active');
+        });
+        const element = document.getElementById(x);
+        element.classList.add('content-active')
+    }
+    let closeit=e.target.classList.contains('user_popup');
+    if(closeit){
+        popup.style.display='none';
+    }
+    //console.log(closeit);
+   // console.log(closeit);
+});
 
-function showL(e) {
-    e.preventDefault();
-    box.children[0].style.display = 'block';
-    box.children[1].style.display = 'none';
-    // console.log(box.children[1]);
-}
-function showS(e) {
-    e.preventDefault();
-    box.children[0].style.display = 'none';
-    box.children[1].style.display = 'block';
-    // console.log(box.children[1]);
-}
+const loginpopup=document.querySelector('#cust').addEventListener('click' , showme);
+function showme(e){
+    console.log(loginpopup);
+    popup.style.display='grid';
+};
