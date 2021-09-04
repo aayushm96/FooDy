@@ -34,3 +34,8 @@ function showme(e){
     console.log(loginpopup);
     popup.style.display='grid';
 };
+
+const popup=document.querySelector('#popup').addEventListener('click , showpop');
+function showpop(e){
+    popup.style.display='block';
+}
