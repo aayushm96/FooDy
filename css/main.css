@@ -81,7 +81,6 @@ main {
 button,
 input,
 label {
-  width: 100%;
   display: block;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -103,7 +102,7 @@ label {
 
 ::-webkit-scrollbar {
   width: 10px;
-  height: 2px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -295,6 +294,7 @@ header .container .left-side .searchbar form input {
 }
 
 header .container .left-side .searchbar form button {
+  width: auto;
   padding: 0 0.5rem;
   font-size: 1rem;
   height: 2rem;
@@ -555,7 +555,7 @@ footer .container .bottom .email form button {
 }
 
 .offers .container {
-  height: 61vh;
+  height: 80vh;
 }
 
 .offers .container h2 {
