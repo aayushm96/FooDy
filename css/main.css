@@ -81,6 +81,7 @@ main {
 button,
 input,
 label {
+  width: 100%;
   display: block;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -294,10 +295,10 @@ header .container .left-side .searchbar form input {
 }
 
 header .container .left-side .searchbar form button {
-  width: auto;
   padding: 0 0.5rem;
   font-size: 1rem;
   height: 2rem;
+  width: 2rem;
   color: #fff;
   background-color: #d81e2d;
   border: none;
