@@ -12,18 +12,18 @@ const popup=document.querySelector('.popup-user');
 const loginpopup=document.querySelector('#cust').addEventListener('click' , showme);
 
 //const login= document.querySelector('.login-btn').addEventListener('click', showmef);
-const signup= document.querySelector('#signup').addEventListener('click', showme);
-const login= document.querySelector('#login').addEventListener('click', showme);
+const signup= document.querySelector('#cust-signup').addEventListener('click', showmef);
+const login= document.querySelector('#cust-login').addEventListener('click', showmex);
 
-// function showmex(){
-//   console.log(login);
-//     popup.style.display='grid';
-// };
+function showmex(){
+  console.log(login);
+    popup.style.display='grid';
+};
 
-// function showmef(){
-//   console.log(signup);
-//     popup.style.display='grid';
-// };
+function showmef(){
+  console.log(signup);
+    popup.style.display='grid';
+};
 
 function showme(){
    // console.log(loginpopup);
