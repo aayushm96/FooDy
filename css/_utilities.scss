@@ -113,16 +113,15 @@ label {
     outline: none;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
-    height: 5px;
+    height: 2.5px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: #fff;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     border-radius: 50px;
     background: $green-color;
 }
-

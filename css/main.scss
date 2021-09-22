@@ -497,6 +497,44 @@ footer {
     }
 }
 
+.order {
+    height: 65vh;
+    .container {
+        .main-box {
+            display: grid;
+            grid-template-columns: auto 30%;
+            //max-height: 100vh;
+            .main-list {
+                // min-height: 25vh;
+            }
+            .main-sum {
+                .sum {
+                    .bar {
+                        padding: 0.2rem;
+                        margin-top: 1rem;
+                        display: flex;
+                        p:first-child {
+                            flex-grow: 1;
+                            // background-color: aqua;
+                        }
+                        a {
+                            color: $red-color;
+                            font-weight: 700;
+                        }
+                    }
+                    button {
+                        font-size: 1rem;
+                        font-weight: 700;
+                        border-radius: 10px;
+                        padding: 0.75rem;
+                        background-color: $green-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 799px) {
     .container {
         max-width: 85vw;
@@ -506,6 +544,10 @@ footer {
     }
     header .container .left-side p {
         font-size: 1rem;
+    }
+    .order .container .main-box {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% auto;
     }
 }
 

@@ -3,8 +3,11 @@ const btns = document.querySelectorAll('.btn');
 const content = document.querySelectorAll('.page');
 //selected all content in a variable in page
 const big = document.querySelector('.content');
-
 const popup=document.querySelector('.popup-user');
+
+
+
+
 
 //console.log(popup);
 
@@ -26,11 +29,15 @@ big.addEventListener('click', function (e) {//click event on the main container
         popup.style.display='none';
     }
     //console.log(closeit);
-   // console.log(closeit);
+    // console.log(closeit);
 });
 
 const loginpopup=document.querySelector('#cust').addEventListener('click' , showme);
-function showme(e){
+const login= document.querySelector('.login-btn').addEventListener('click', showme);
+const signup= document.querySelector('.signup').addEventListener('click', showme);
+
+function showme(){
     console.log(loginpopup);
+    console.log(login);
     popup.style.display='grid';
 };
