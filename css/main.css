@@ -725,7 +725,6 @@ footer .container .bottom .email form button {
 }
 
 .popup-user .content .btn-container {
-  border: 2px #29e072 solid;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -788,10 +787,11 @@ footer .container .bottom .email form button {
 }
 
 .order {
-  height: 65vh;
+  min-height: 80vh;
 }
 
 .order .container .main-box {
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 30%;

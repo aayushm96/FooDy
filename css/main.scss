@@ -448,7 +448,7 @@ footer {
         background-color: #fff;
         animation: page-popup 0.4s ease-in-out;
         .btn-container {
-            border: 2px $green-color solid;
+            // border: 2px $green-color solid;
             width: 100%;
             display: flex;
             justify-content: space-evenly;
@@ -498,9 +498,10 @@ footer {
 }
 
 .order {
-    height: 65vh;
+    min-height: 80vh;
     .container {
         .main-box {
+            margin: 0 auto;
             display: grid;
             grid-template-columns: auto 30%;
             //max-height: 100vh;
