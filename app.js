@@ -10,8 +10,14 @@ const popup=document.querySelector('.popup-user');
 
 
 const loginpopup=document.querySelector('#cust').addEventListener('click' , showme);
-const login= document.querySelector('.login-btn').addEventListener('click', showme);
+const login= document.querySelector('.login-btn').addEventListener('click', showme2);
 const signup= document.querySelector('.signup').addEventListener('click', showme);
+
+function showme2(){
+   // console.log(loginpopup);
+    //console.log(login);
+    popup.style.display='grid';
+};
 
 function showme(){
    // console.log(loginpopup);
