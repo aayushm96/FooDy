@@ -9,6 +9,16 @@ const popup=document.querySelector('.popup-user');
 
 
 
+const loginpopup=document.querySelector('#cust').addEventListener('click' , showme);
+const login= document.querySelector('.login-btn').addEventListener('click', showme);
+//const signup= document.querySelector('.signup').addEventListener('click', showme);
+
+function showme(){
+   // console.log(loginpopup);
+    //console.log(login);
+    popup.style.display='grid';
+};
+
 //console.log(popup);
 
 big.addEventListener('click', function (e) {//click event on the main container
@@ -31,13 +41,3 @@ big.addEventListener('click', function (e) {//click event on the main container
     //console.log(closeit);
     // console.log(closeit);
 });
-
-const loginpopup=document.querySelector('#cust').addEventListener('click' , showme);
-const login= document.querySelector('.login-btn').addEventListener('click', showme);
-const signup= document.querySelector('.signup').addEventListener('click', showme);
-
-function showme(){
-    console.log(loginpopup);
-    console.log(login);
-    popup.style.display='grid';
-};

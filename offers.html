@@ -9,8 +9,8 @@
     <link rel="icon" href="/img/icons8-pizza-delivery-96.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="https://aayushm96.github.io/css/main.css"> -->
-    <script type="text/javascript" src="/app.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <!-- <script type="text/javascript" src="/app.js"></script> -->
+    <link rel="stylesheet" href="/css/main.css">
     <title>FooDy-Offers</title>
 </head>
 
@@ -98,7 +98,55 @@
             </div>
         </div>
     </footer>
-
+    <section id="popup_user" class="popup-user">
+        <div class="content">
+            <div class="btn-container">
+                <button class="btn btn-active" data-id="login">LogIn</button>
+                <button class="btn" data-id="signup">SignUp</button>
+            </div>
+            <div class="content-container">
+                <div class="page content-active" id="login">
+                    <div class="page-body">
+                        <h2>LogIn-<span>FooDy</span></h2>
+                        <div class="form-grp">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-grp">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter your password">
+                        </div>
+                        <div class="form-grp">
+                            <button type="submit">LogIn</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="page" id="signup">
+                    <div class="page-body">
+                        <h2>SignUp for-<span>FooDy</span></h2>
+                        <div class="form-grp">
+                            <label for="signup_email">Email</label>
+                            <input type="email" id="signup_email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-grp">
+                            <label for="signup_password">Password</label>
+                            <input type="password" id="signup_password" placeholder="Enter password">
+                        </div>
+                        <div class="form-grp">
+                            <label for="cnfpassword">Confirm Password</label>
+                            <input type="password" id="cnfpassword" placeholder="Confirm password">
+                        </div>
+                        <div class="form-grp">
+                            <button type="submit">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="close text-center">
+                <a href="#" class="user_popup">Close</a>
+            </div>
+        </div>
+    </section>
 
 
     <script type="text/javascript" src="/app.js"></script>
